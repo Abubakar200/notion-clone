@@ -9,7 +9,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
   if (isLoading) {
     return (
-      <div className="h-full flex justify-center items-center">
+      <div className="h-full flex items-center justify-center">
         <Spinner size={"lg"} />
       </div>
     );
@@ -21,7 +21,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="h-full flex dark:bg-[#1f1f1f]">
       <Navigation />
-      <main className="h-full flex overflow-y-auto">{children}</main>
+      <main className="h-full flex-1 overflow-y-auto">{children}</main>
     </div>
   );
 };
