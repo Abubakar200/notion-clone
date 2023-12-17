@@ -21,7 +21,7 @@ const Heading = () => {
       </h3>
       {isLoading && (
         <div className="flex items-center justify-center">
-          <Spinner />
+          <Spinner size={"lg"} />
         </div>
       )}
       {isAuthenticated && !isLoading && (
